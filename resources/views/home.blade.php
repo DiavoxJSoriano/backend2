@@ -9,15 +9,19 @@
 
                 <div class="card-body">
                     @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
+                    <div class="alert alert-success" role="alert">
+                        {{ session('status') }}
+                    </div>
                     @endif
 
                     {{ __('You are logged in!') }}
                 </div>
+
+                <button type="button" id="btnGo" class="btn btn-primary" onclick="window.location='{{ URL::route('user_management') }}'">Go To User Management</button>
+
             </div>
         </div>
     </div>
 </div>
+
 @endsection

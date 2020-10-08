@@ -21,6 +21,13 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+            // Additional fields
+            $table->string('name_first', 50);
+            $table->string('name_last', 50);
+            $table->string('address');
+            $table->string('username', 25);
+            $table->string('postcode', 10);
+            $table->string('contact_phone', 25);
         });
     }
 
