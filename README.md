@@ -59,5 +59,26 @@ DB_PASSWORD=<your-password>
 - Execute command `User::factory()->count(50)->create();` to populate 50 random test users. You may change the count(value) to the number of records you wish to test. Re-run this code will truncate the table and re-create new sets of users.
 - In case of duplicate key error. Execute the command again.
 
+## Application Views
+
+- Registration
+https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-Registration.PNG
+
+- Successful Registration redirects to Dashboard
+https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-AfterRegistration.PNG
+
+- Go to User Management view
+https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-UserManagementPage.PNG
+
+- Add a new user
+https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-AddNewUser.PNG
+
+- Edit a user profile
+https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-EditProfile.PNG
+
+- Multiple selection and deletion
+https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-MultipleSelectAndDelete.PNG
+
+
 
 
