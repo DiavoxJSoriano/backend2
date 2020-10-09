@@ -68,7 +68,7 @@ DB_PASSWORD=<your-password>
 
 ## Data Migration
 
-- Run `php artisan migrate` to initially create migrate database structure.
+- Run `php artisan migrate` to initially create database structure.
 - Run `php artisan tinker` to open Psy Shell
 - Execute command `User::factory()->count(50)->create();` to populate 50 random test users. You may change the count(value) to the number of records you wish to test. Re-run this code will truncate the table and re-create new sets of users.
 - In case of duplicate key error. Execute the command again.
