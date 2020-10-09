@@ -2,12 +2,12 @@
 
 A basic user management system implementing authentication (login page) with features below:
 
-○ Add a new user
-○ Edit a user
-○ Delete a user
-○ View list of all users in the system
-○ Allow multiple users to be removed
-○ User must have fields
+- Add a new user
+- Edit a user
+- Delete a user
+- View list of all users in the system
+- Allow multiple users to be removed
+- User must have fields
 ■ First name
 ■ Last name
 ■ Address
