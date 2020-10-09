@@ -62,19 +62,19 @@ DB_PASSWORD=<your-password>
 ## Application Views
 
 - Registration
-!(https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-Registration.PNG)
+![Registration](https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-Registration.PNG)
 
 - Successful Registration redirects to Dashboard
-!(https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-AfterRegistration.PNG)
+![Successful Registration redirects to Dashboard](https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-AfterRegistration.PNG)
 
 - Go to User Management view
-!(https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-UserManagementPage.PNG)
+![Go to User Management view](https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-UserManagementPage.PNG)
 
 - Add a new user
-!(https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-AddNewUser.PNG)
+![Add a new user](https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-AddNewUser.PNG)
 
 - Edit a user profile
-!(https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-EditProfile.PNG)
+![Edit a user profile](https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-EditProfile.PNG)
 
 - Multiple selection and deletion
 !(https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-MultipleSelectAndDelete.PNG)
