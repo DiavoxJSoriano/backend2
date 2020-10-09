@@ -30,12 +30,14 @@ This is an initial release of my User Management Feature with Backend User API.
 3. Create an empty database in your MySQL database. This application was tested on MySQL 5 version. There might be conflict still needed to be resolved on a MySQL 8.
 4. Update your database configurations below:
 
+```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=backend
 DB_USERNAME=root
 DB_PASSWORD=<your root password>
+```
 
 ## Data Migration
 
