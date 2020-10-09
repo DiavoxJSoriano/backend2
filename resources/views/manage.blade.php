@@ -54,7 +54,7 @@
                                     <!-- form card register -->
                                     <div class="card card-outline-secondary">
                                         <div class="card-header">
-                                            <h3 class="mb-0">Sign Up</h3>
+                                            <h3 class="mb-0">Add User</h3>
                                         </div>
                                         <div class="card-body">
                                             <form class="form" role="form" autocomplete="off" id="frm_signup">
@@ -170,7 +170,7 @@
 
                 <div class="container inline">
                     <button type="button" id="btnAdd" class="btn btn-success">Add</button>
-                    <button type="button" id="btnData" class="btn btn-success">Show Data</button>
+                    <!-- <button type="button" id="btnData" class="btn btn-success">Show Data</button> -->
                     <button type="button" id="btnDelete" class="btn btn-danger">Delete</button>
                 </div>
                 <br>
