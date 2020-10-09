@@ -77,7 +77,7 @@ DB_PASSWORD=<your-password>
 ![Edit a user profile](https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-EditProfile.PNG)
 
 - Multiple selection and deletion
-!(https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-MultipleSelectAndDelete.PNG)
+![Multiple selection and deletion](https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-MultipleSelectAndDelete.PNG)
 
 
 
