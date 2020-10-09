@@ -89,7 +89,7 @@ DB_PASSWORD=<your-password>
 
 ## Release Notes
 
-This is an initial release of my User Management Feature with Backend User API.
+This is an initial release of my User Management Feature with Backend User API built in Laravel 8 from scratch. Feel free to help me improve.
 
 Upcoming:
 - Improve requests validation.
