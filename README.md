@@ -1,8 +1,22 @@
 # Laravel Backend User Management
 
-## Release Notes
+A basic user management system implementing authentication (login page) with features below:
 
-This is an initial release of my User Management Feature with Backend User API.
+○ Add a new user
+○ Edit a user
+○ Delete a user
+○ View list of all users in the system
+○ Allow multiple users to be removed
+○ User must have fields
+■ First name
+■ Last name
+■ Address
+■ Postcode
+■ Contact Phone Number
+■ Email
+■ Username
+■ Password
+
 
 ## Prerequisites
 
@@ -61,24 +75,22 @@ DB_PASSWORD=<your-password>
 
 ## Application Views
 
-- Registration
 ![Registration](https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-Registration.PNG)
 
-- Successful Registration redirects to Dashboard
 ![Successful Registration redirects to Dashboard](https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-AfterRegistration.PNG)
 
-- Go to User Management view
 ![Go to User Management view](https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-UserManagementPage.PNG)
 
-- Add a new user
 ![Add a new user](https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-AddNewUser.PNG)
 
-- Edit a user profile
 ![Edit a user profile](https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-EditProfile.PNG)
 
-- Multiple selection and deletion
 ![Multiple selection and deletion](https://github.com/DiavoxJSoriano/backend2/blob/main/images/SS-MultipleSelectAndDelete.PNG)
 
+## Release Notes
 
+This is an initial release of my User Management Feature with Backend User API.
 
-
+Upcoming:
+- Improve requests validation.
+- Next to do, apply authentication to api routes using JWT and pass to Token Bearer.
