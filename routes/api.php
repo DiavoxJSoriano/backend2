@@ -19,5 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::resource('user', 'App\Http\Controllers\UserController');
+Route::post('delete-users', 'App\Http\Controllers\UserController@destroyMany')->name("user.destruct");
 
-Route::get('get_users', 'App\Http\Controllers\HomeController@manage');
+Route::get('get-users', 'App\Http\Controllers\HomeController@manage');
+

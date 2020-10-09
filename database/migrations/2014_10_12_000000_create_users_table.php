@@ -22,12 +22,12 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
             // Additional fields
-            $table->string('name_first', 50);
-            $table->string('name_last', 50);
-            $table->string('address');
-            $table->string('username', 25);
-            $table->string('postcode', 10);
-            $table->string('contact_phone', 25);
+            $table->string('name_first', 50)->default('')->nullable(true);
+            $table->string('name_last', 50)->default('')->nullable(true);
+            $table->string('address')->default('')->nullable(true);
+            $table->string('username', 25)->default('')->nullable(true);
+            $table->string('postcode', 10)->default('')->nullable(true);
+            $table->string('contact_phone', 25)->default('')->nullable(true);
         });
     }
 

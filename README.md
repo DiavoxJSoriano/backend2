@@ -2,14 +2,15 @@
 
 ## Release Notes
 
-This is an initial release of my User Management Feature with Backend User API
+This is an initial release of my User Management Feature with Backend User API.
 
 ## Prerequisites
 
 - [node.js & npm](https://nodejs.org/)
 - [laravel 8](http://laravel.com/)
 - [laravel/ui](https://github.com/laravel/ui)
-- [laravel http client](https://laravel.com/docs/8.x/http-client)
+- [jquery](https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js)
+
 
 ## Installation
 
@@ -18,13 +19,10 @@ This is an initial release of my User Management Feature with Backend User API
 3. Run `php artisan serve` to start the server.
 4. Navigate to `localhost:8000` in your browser.
 
-## Operation
+## Data Migration
+
+Run `php artisan serve` to initially create migrate database structure.
+Run `php artisan tinker` to open Psy Shell
+Execute command `User::factory()->count(50)->create();` to populate 50 random test users. You may change the count(value) to the number of records you wish to test. Re-run this code will truncate the table and re-create new sets of users.
 
 
-### Modify CSS (Sass)
-
-In order to work with the Sass files, you need to enable live compiling, in order to reflect your changes in the `.scss` files in `public/css/app.css`.
-
-Start the live compiling with the `npm run watch` command, this will compile the Sass and also listen for changes and recompile whenever that happens.
-
-In order to build a minified version of the CSS, run the `npm run build` command. This will do exactly the same as `npm run watch`, but it will output the `app.css` file as minified.
