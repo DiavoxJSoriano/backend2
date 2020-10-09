@@ -14,6 +14,19 @@ This is an initial release of my User Management Feature with Backend User API.
 - [tinker](https://laravel.com/docs/8.x/artisan#tinker)
 - [jquery](https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js)
 
+## CRUD Operations
+
+- User API resource CRUD operations are listed below which can be found in UserController:
+
+```
+| GET|HEAD  | api/user               | user.index       | App\Http\Controllers\UserController@index
+| POST      | api/user               | user.store       | App\Http\Controllers\UserController@store
+| GET|HEAD  | api/user/{user}        | user.show        | App\Http\Controllers\UserController@show
+| PUT|PATCH | api/user/{user}        | user.update      | App\Http\Controllers\UserController@update
+| DELETE    | api/user/{user}        | user.destroy     | App\Http\Controllers\UserController@destroy
+| POST      | api/delete-users       | user.destruct    | App\Http\Controllers\UserController@destroyMany
+```
+
 ## Installation
 
 1. Clone [this repository](https://github.com/DiavoxJSoriano/backend2.git) to a location on your file system.
@@ -36,7 +49,7 @@ DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=backend
 DB_USERNAME=root
-DB_PASSWORD=<your root password>
+DB_PASSWORD=<your-password>
 ```
 
 ## Data Migration
