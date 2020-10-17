@@ -7,7 +7,9 @@ use App\Models\User;
 use Exception;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
+use App\Http\Requests\UserRequest;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Validator;
 
 class UserController extends Controller
 {
@@ -50,21 +52,21 @@ class UserController extends Controller
     public function store(Request $request)
     {
         try {
-            if (!$request->has('email')) {
-                Log::warning('Email is missing.');
-                return response()->json(['status' => 'Email is missing.'], 403);
+
+            // Validate requests
+            $validator = Validator::make($request->all(), [
+                'username' => 'required|min:8|max:20',
+                'password' => 'required|min:8',
+                'email' => 'required',
+            ]);
+
+            if ($validator->fails()) {
+                // get first error message
+                $error = $validator->errors()->first();
+                return response()->json(['status' => $error], 422);
             }
 
-            if (!$request->has('password')) {
-                Log::warning('Password is missing.');
-                return response()->json(['status' => 'Password is missing.'], 403);
-            }
-
-            if (!$request->has('username')) {
-                Log::warning('Username is missing.');
-                return response()->json(['status' => 'Username is missing.'], 403);
-            }
-
+            // Collect names and combine
             $first = (string) $request->name_first;
             $last = (string) $request->name_last;
             $name = $first . " " . $last;
@@ -88,7 +90,7 @@ class UserController extends Controller
             return new UserResource($user);
         } catch (Exception $ex) {
             Log::error('adding user.', [$ex->getMessage()]);
-            return response()->json(['status' => $ex->getMessage()], 500);
+            return response()->json(['status' => $ex->getMessage()], 400);
         } catch (ModelNotFoundException $ex) {
             Log::error('adding user.', [$ex->getMessage()]);
             return response()->json(['status' => $ex->getMessage()], 404);
@@ -193,4 +195,6 @@ class UserController extends Controller
             return response()->json(['status' => $ex->getMessage()], 500);
         }
     }
+
+
 }

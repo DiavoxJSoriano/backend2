@@ -133,6 +133,13 @@ return [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
+        'username' => [
+            'required' => 'Please include a username.',
+            'min' => 'Username must be atleast :min characters.',
+        ],
+        'email' => [
+            'required' => 'Please include an email address.',
+        ],
     ],
 
     /*
