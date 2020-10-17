@@ -91,6 +91,24 @@ DB_PASSWORD=<your-password>
 
 This is an initial release of my User Management Feature with Backend User API built in Laravel 8 from scratch. Feel free to help me improve.
 
+Update(s):
+- User POST Validation - Requests validated and API returns status error of specific failed request.
+
+```
+$validator = Validator::make($request->all(), [
+    'username' => 'required|min:8|max:20',
+    'password' => 'required|min:8',
+    'email' => 'required',
+]);
+```
+
+- User PUT Validation - Requests validated and API returns status error of specific failed request.
+
+```
+$validator = Validator::make($request->all(), [
+    'email' => 'email',
+]);
+```
+
 Upcoming:
-- Improve requests validation.
 - Next to do, apply authentication to api routes using JWT and pass to Token Bearer.

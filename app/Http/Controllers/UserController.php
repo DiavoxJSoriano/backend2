@@ -129,6 +129,17 @@ class UserController extends Controller
     {
         try {
 
+            // Validate requests
+            $validator = Validator::make($request->all(), [
+                'email' => 'email',
+            ]);
+
+            if ($validator->fails()) {
+                // get first error message
+                $error = $validator->errors()->first();
+                return response()->json(['status' => $error], 422);
+            }
+
             $found = User::where('email', $request->email)->where('id', '!=', $user->id)->first();
 
             if (!$found) {
